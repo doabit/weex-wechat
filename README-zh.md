@@ -23,7 +23,7 @@ allprojects {
 
 ### 集成微信登录和分享
 
-集成微信登录和分享，首先创建一个包名为 'wxapi'，并且添加一个名为 [WXEntryActivity](android/WXEntryActivity.java) 的类。
+集成微信登录和分享，首先创建一个包名为 'wxapi'，并且添加一个名为 [WXEntryActivity](https://github.com/doabit/weex-wechat/blob/master/android/WXEntryActivity.java) 的类。
 
 添加下面代码到 `AndroidManifest.xml`:
 
@@ -41,7 +41,7 @@ allprojects {
 
 ### 集成微信支付
 
-在 `wxapi`包中添加文件名为 [WXPayEntryActivity](android/WXPayEntryActivity.java) 的类
+在 `wxapi`包中添加文件名为 [WXPayEntryActivity](https://github.com/doabit/weex-wechat/blob/master/android/WXPayEntryActivity.java) 的类
 
 添加下面代码到 `AndroidManifest.xml`:
 
@@ -92,6 +92,10 @@ iOS 9 往后, 在 Targets > info > Custom iOS Target Properties 中 添加 wecha
 [WeexErosFramework](https://github.com/aa453509345/WeexErosFramework)
 
 [微信开放平台](https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=1417674108&token=&lang=zh_CN)
+
+## Author
+
+[@doabit](https://github.com/doabit)
 
 ## license
 

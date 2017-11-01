@@ -1,4 +1,4 @@
-# weex-wechat [中文版](README-zh.md)
+# weex-wechat [中文版](https://github.com/doabit/weex-wechat/blob/master/README-zh.md)
 
 > Wechat(auth, pay, share) plugin for weex.
 
@@ -23,7 +23,7 @@ allprojects {
 
 ### Integrating with login and share
 
-If you are going to integrate login or share functions, you need to create a package named 'wxapi' in your application package and a class named [WXEntryActivity](android/WXEntryActivity.java)
+If you are going to integrate login or share functions, you need to create a package named 'wxapi' in your application package and a class named [WXEntryActivity](https://github.com/doabit/weex-wechat/blob/master/android/WXEntryActivity.java)
 
 Then add the following node to `AndroidManifest.xml`:
 
@@ -43,7 +43,7 @@ Then add the following node to `AndroidManifest.xml`:
 
 If you are going to integrate payment functionality by using this library, then
 create a package named also `wxapi` in your application package and a class named
-[WXPayEntryActivity](android/WXPayEntryActivity.java)
+[WXPayEntryActivity](https://github.com/doabit/weex-wechat/blob/master/android/WXPayEntryActivity.java)
 
 Then add the following node to `AndroidManifest.xml`:
 
@@ -94,6 +94,10 @@ Then copy the following in AppDelegate.m:
 [WeexErosFramework](https://github.com/aa453509345/WeexErosFramework)
 
 [WeChat Open Platform](https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=1417674108&token=&lang=zh_CN)
+
+## Author
+
+[@doabit](https://github.com/doabit)
 
 ## license
 
