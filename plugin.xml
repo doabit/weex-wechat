@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.w3.org/ns/widgets"
+    id="weex-wechat"
+    version="0.1.0">
+    <name>weex-wechat</name>
+    <description>Wechat(auth, pay, share) module for weex.</description>
+    <license>MIT</license>
+    <keywords>weex,plugin,wechat,auth,wxpay,share</keywords>
+    <repo>https://github.com/doabit/weex-wechat.git</repo>
+    <issue>https://github.com/doabit/weex-wechat/issues</issue>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="WeexpluginConfig.xml" parent="/*">
+            <feature name="WeChatModule">
+                <param name="category" value="module" />
+                <param name="ios-package" value="WeChatModule" />
+                <param name="api" value="wechat" />
+            </feature>
+        </config-file>
+        <framework src="weex-wechat" type="podspec" spec="0.1.1" />
+    </platform>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="WeChatModule">
+                <param name="category" value="module" />
+                <param name="android-package" value="com.doabit.weex.extend.module.WeChatModule" />
+                <param name="api" value="wechat" />
+            </feature>
+        </config-file>
+        <source-file src="android/WXEntryActivity.java" target-dir="/src/com/doabit/weex/wxapi" />
+        <source-file src="android/WXPayEntryActivity.java" target-dir="/src/com/doabit/weex/wxapi" />
+        <framework src="com.github.doabit:weex-wechat-android:v0.0.3" />
+    </platform>
+
+</plugin>
