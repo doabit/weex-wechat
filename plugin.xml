@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://www.w3.org/ns/widgets"
     id="weex-wechat"
-    version="0.1.0">
+    version="0.1.2">
     <name>weex-wechat</name>
     <description>Wechat(auth, pay, share) module for weex.</description>
     <license>MIT</license>
