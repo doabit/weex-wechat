@@ -31,9 +31,9 @@
                 <param name="api" value="wechat" />
             </feature>
         </config-file>
-        <source-file src="android/WXEntryActivity.java" target-dir="/src/com/doabit/weex/wxapi" />
-        <source-file src="android/WXPayEntryActivity.java" target-dir="/src/com/doabit/weex/wxapi" />
-        <framework src="com.github.doabit:weex-wechat-android:v0.0.3" />
+     <!--    <source-file src="android/WXEntryActivity.java" target-dir="/src/com/doabit/weex/wxapi" />
+        <source-file src="android/WXPayEntryActivity.java" target-dir="/src/com/doabit/weex/wxapi" /> -->
+        <framework src="com.github.doabit:weex-wechat-android:0.1.0" />
     </platform>
 
 </plugin>

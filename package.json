@@ -1,16 +1,16 @@
 {
-    "version": "0.1.0",
+    "version": "0.1.1",
     "platform": [
         "ios",
         "android"
     ],
-    "description": "Wechat(pay, auth, share) module for weex.",
+    "description": "Wechat(auth, pay, share) module for weex.",
     "keywords": [
         "weex",
         "plugin",
         "wechat",
         "auth",
-        "pay",
+        "wxpay",
         "share"
     ],
     "license": "MIT",
