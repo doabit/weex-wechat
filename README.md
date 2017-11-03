@@ -7,6 +7,84 @@
 ```bash
 weexpack plugin install weex-wechat
 ```
+
+## Usage
+
+```javascript
+var wechat = weex.requireModule('wechat');
+var stream = weex.requireModule('stream');
+
+wechat.registerApp("appid", function(data) {
+  console.log(data, "wx register")
+})
+
+wechat.login({}, function(data) {
+  console.log(data)
+})
+
+// share text to timeline (share to session use shareToSession)
+wechat.shareToTimeLine({
+  type: "text",
+  content: "text content"
+}, function(data) {
+  console.log("text shared", data)
+})
+
+// share image to timeline 
+wechat.shareToTimeLine({
+  type: "image",
+  image: imageUrl
+}, function(data) {
+  console.log("image shared", data)
+})
+
+// share video to timeline
+wechat.shareToTimeLine({
+  type: "video",
+  title: 'video title',
+  content: "video content",
+  image: imageUrl,
+  url: 'https://v.qq.com/x/cover/m4cz4v1n0av4a8k/x00223sb1nm.html?new=1'
+}, function(data) {
+  console.log("video shared", data)
+})
+
+// share webpage to timeline
+wechat.shareToTimeLine({
+  type: "webpage",
+  title: 'vebpage title',
+  content: "webpage content",
+  image: imageUrl,
+  url: 'http://github.com/doabit'
+}, function(data) {
+  console.log("web page shared", data)
+})
+
+// wxpay
+stream.fetch({
+  method: 'POST',
+  url: 'http://192.168.1.102:3000/wx_app_pay', //change to your wepay api
+  type: "json"
+}, function(resData){
+  if (resData.ok) {
+    var data = resData.data;
+    wechat.pay({
+        appid: data.appid,
+        sign: data.sign,
+        timestamp: data.timestamp,
+        noncestr: data.noncestr,
+        partnerid: data.partnerid,
+        prepayid: data.prepayid,
+        packageValue:data.package
+    }, function(resData){
+        console.log(resData)
+    })
+  } else {
+    console.log(resData)
+  }
+})
+```
+
 ## setup for android
 
 ### add `jitpack.io` to android/build.gradle
