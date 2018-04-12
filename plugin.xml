@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://www.w3.org/ns/widgets"
     id="weex-wechat"
-    version="0.1.2">
+    version="0.2.1">
     <name>weex-wechat</name>
     <description>Wechat(auth, pay, share) module for weex.</description>
     <license>MIT</license>
@@ -33,7 +33,7 @@
         </config-file>
      <!--    <source-file src="android/WXEntryActivity.java" target-dir="/src/com/doabit/weex/wxapi" />
         <source-file src="android/WXPayEntryActivity.java" target-dir="/src/com/doabit/weex/wxapi" /> -->
-        <framework src="com.github.doabit:weex-wechat-android:0.1.0" />
+        <framework src="com.github.doabit:weex-wechat-android:0.2.0" />
     </platform>
 
 </plugin>
